@@ -35,19 +35,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Jogo.html" title="Jogo">
+                    <a href="#jogo" title="Jogo">
                         <i class="fa-solid fa-futbol"></i>
                         Jogo
                     </a>
                 </li>
                 <li>
-                    <a href="SobreJogo.hmtl" title="Sobre o Jogo">
+                    <a href="#Sobreojogo" title="Sobre o Jogo">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         Sobre o Jogo
                     </a>
                 </li>
                 <li>
-                    <a href="Contato.html" title="Contato">
+                    <a href="#contato" title="Contato">
                         <i class="fa-regular fa-envelope"></i>
                         Contato
                     </a>
@@ -55,18 +55,79 @@
             </ul>
         </nav>
     </header>
-    
-    <section class="banner">
-        <div class="flex">
-            <div class="flex-coluna">
+    <main>
+        <section class="banner">
+            <div class="flex">
+                <div class="flex-coluna">
+                    <h2>FUT3</h2>
+                    <p>"FUT3" é um jogo Top Down, de esporte, baseado no futebol, o jogo consiste em uma partida 1x1 em um campo de futebol, onde quem fizer a maior pontuação em um determinado limite de tempo ganha.</p>
+                </div>
+                <div class="flex-coluna desktop">
+                    <img src="ImagemJogo.jpeg" alt="Imagem do Jogo" title="Imagem do Jogo">
+                </div>
+                <div class="flex-coluna">
+            </div> 
+        </section>
+        <section id="jogo">
+            <div class="centro">
                 <h2>FUT3</h2>
-                <p>"FUT3" é um jogo Top Down, de esporte, baseado no futebol, o jogo consiste em uma partida 1x1 em um campo de futebol, onde quem fizer a maior pontuação em um determinado limite de tempo ganha.</p>
             </div>
-            <div class="flex-coluna">
-                <img src="ImagemJogo.jpeg" alt="Imagem do Jogo" title="Imagem do Jogo">
-            </div>
+        <section id="Sobreojogo">
+            <div class="centro">
+                <h2>Sobre o Jogo</h2>
+            <br>
+                <h3>Objetivo Principal do jogo:</h3>
+                    <p>O principal objetivo do jogo é fazer a maior quantidade de gols para vencer o time adversário sem ser interrompido por eles. </p>
+            <br>
+                <h2>Ficha Técnica</h2>
+                <h3>Quesito/Descrição</h3>
+                    <ul>
+                        <li>Engine/Construct 3</li>
+                        <li>Plataforma/Pc</li>
+                        <li>Mecânica/Top-Down, esp</li>
+                        <li>Dispositivo de entrada/Mouse,teclado</li>
+                    </ul>
+            <br>
+                <h3>Time do jogador 1:</h3>
+                    <p>Time vermelho</p>
+                <br>
+                    <h3>Time do jogador 2:</h3> 
+                    <p>Time azul</p>
+                <br>
+                <h2>Trilha Sonora</h2>
+                    <a href="https://drive.google.com/drive/folders/1Exn8GzeotIKWVgm_9RlMqrbmitE4hfYl?usp=sharing" title="Ir para o drive com os sons" target="_blank">Drive com a trilha sonora</a>
+                <br>
+                <h2>Regras do Jogo</h2>
+            <ul>
+                <li><strong>Regra #1:</strong>O jogador deve pegar a bola e levar até o gol do adversário para fazer um ponto.</li>
+                <li><strong>Regra #2:</strong>Cada gol vale 1 ponto.</li>
+                <li><strong>Regra #3:</strong>O jogo é uma partida de 2 minutos e quem fizer mais gols nesse intervalo de tempo vence a partida.</li>
+            </ul>    
         </div>
     </section>
+    <section id="contato">
+        <div class="centro">
+            <h2>Entre em contato</h2>
+            <form name="formContato">
+                <label for="nome">Digite seu nome completo:</label>
+                <input type="text" name="nome" id="nome" required>
+                <br>
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="mensagem">Digite sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" required rows="10"></textarea>
+                <br>
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Desenvolvido por Eduardo Yoshiaki Kaneko - Todos os direitos reservados</p>
+</footer>
     <script>
         function mostrarMenu() {
             let menu = document.querySelector(".header-nav");
