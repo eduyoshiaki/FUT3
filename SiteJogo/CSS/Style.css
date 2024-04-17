@@ -1,0 +1,53 @@
+/* css reset */
+* {
+    /* retirar a margem externa */
+    margin: 0;
+    /* retirar a margem interna */
+    padding: 0;
+}
+
+/* formatar o corpo */
+body {
+    font-family: Arial, Verdana;
+    font-size: 16px;
+}
+
+h1 {
+    /* centralizar */
+    text-align: center;
+    /* maiúsculo */
+    text-transform: uppercase;
+    /* tamanho da fonte */
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+header {
+    /* cor de fundo */
+    background-color: #1a1a1a;
+    /* largura */
+    width: 100%;
+    /* sombra */
+    box-shadow: 0 0 10px #CCC;
+}
+
+.centro {
+    /* tamanho - largura */
+    width: 1000px;
+    /* centralizar */
+    margin: auto;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color:#1a1a1a;
+    color: white;
+}
