@@ -6,48 +6,98 @@
     padding: 0;
 }
 
-/* formatar o corpo */
 body {
-    font-family: Arial, Verdana;
-    font-size: 16px;
+    font: 18px Nunito, Arial;
+    color: black;
+    padding-top: 100px;
 }
 
-h1 {
-    /* centralizar */
-    text-align: center;
-    /* maiúsculo */
-    text-transform: uppercase;
-    /* tamanho da fonte */
-    font-size: 32px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 24px;
-}
-
-header {
-    /* cor de fundo */
-    background-color: #1a1a1a;
-    /* largura */
+.header {
+    background: #96f8c3;
     width: 100%;
-    /* sombra */
-    box-shadow: 0 0 10px #CCC;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px #ccc;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.centro {
-    /* tamanho - largura */
-    width: 1000px;
-    /* centralizar */
-    margin: auto;
+.header .header-logo img {
+    width: 200px;
 }
 
-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.header .header-menu {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    float: right;
+    margin-top: 25px;
+    border-radius: 5px;
 }
 
-footer {
-    background-color:#1a1a1a;
-    color: white;
+.header .header-nav ul li {
+    margin: 15px;
+}
+
+.header .header-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header .header-nav ul {
+    list-style: none;
+}
+
+.header .header-nav {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.banner h2, banner p {
+    color: black;
+    line-height: 35px;
+}
+
+.banner .flex {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.flex img {
+    width: 650px;
+    padding-left: 50px;
+}
+
+.flex { 
+    text-align: left;
+}
+
+@media (min-width: 460px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header .header-nav {
+        display: block;
+    }
+
+    .header .header-nav {
+        float: right;
+        margin-top: 60px;
+    }
+
+    .header .header-nav ul li {
+        display: inline-block;
+    }
+    .flex {
+        text-align: left;
+        display: flex;
+        width: 1200px;
+        margin: auto;
+    }
 }
