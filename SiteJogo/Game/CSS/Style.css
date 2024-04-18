@@ -1,0 +1,170 @@
+/* css reset */
+* {
+    /* retirar a margem externa */
+    margin: 0;
+    /* retirar a margem interna */
+    padding: 0;
+}
+
+body {
+    font: 18px Nunito, Arial;
+    color: black;
+    padding-top: 100px;
+}
+
+.header {
+    background: #96f8c3;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.header .header-logo img {
+    width: 200px;
+}
+
+.header .header-menu {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    float: right;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+
+.header .header-nav ul li {
+    margin: 15px;
+}
+
+.header .header-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header .header-nav ul {
+    list-style: none;
+}
+
+.header .header-nav {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.banner h2, banner p {
+    color: black;
+    line-height: 35px;
+}
+
+.banner .flex {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 20px;
+}
+
+.flex img {
+    width: 650px;
+    padding-left: 50px;
+}
+
+.flex { 
+    text-align: center;
+}
+
+.centro {
+    width: 1000px;
+    margin: auto;
+}
+
+.lado {
+    padding-left: 70px;
+}
+
+iframe {
+    border: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+#contato {
+    background-color: #F1F1F1;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+} 
+
+input, textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+button {
+    background-color: #96f8c3;
+    padding: 10px;
+    border: 0;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00f5a0;
+}
+
+footer {
+    background-color: #96f8c3;
+    color: black;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 460px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header .header-nav {
+        display: block;
+    }
+
+    .header .header-nav {
+        float: right;
+        margin-top: 60px;
+    }
+
+    .header .header-nav ul li {
+        display: inline-block;
+    }
+    .flex {
+        text-align: center;
+        display: flex;
+        width: 1000x;
+        margin: auto;
+        
+    }
+}

@@ -56,27 +56,25 @@
         </nav>
     </header>
 
-    <section class="banner">
-        <div class="flex">
-            <div class="flex-col">
-                <h2>FUT3</h2>
-                <p>"FUT3" é um jogo Top Down, de esporte, baseado no futebol, o jogo consiste em uma partida 1x1 em um campo de futebol, onde quem fizer a maior pontuação em um determinado limite de tempo ganha.</p>
-            </div>
-            <div class="flex-col">
-                <img src="ImagemJogo.jpeg" alt="Imagem do jogo">
-            </div>
+    <section id="contato">
+        <div class="flex-centro">
+            <h2>Entre em contato</h2>
+            <form name="formContato">
+                <label for="nome">Digite seu nome completo:</label>
+                <input type="text" name="nome" id="nome" required>
+                <br>
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" name="email" id="email" required>
+                <br>
+                <label for="mensagem">Digite sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" required rows="10"></textarea>
+                <br>
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+            </form>
         </div>
-    </section>
-
-    <main>
-        <section id="jogo">
-            <div class="flex-centro">
-                <h1>FUT3</h1>
-                <iframe src="Game/index.html" title="FUT3"></iframe>
-
-            </div>
-        </section>
-    </main>
+    </section>   
 
     <footer class="footer">
         <div class="flex-centro">
@@ -105,21 +103,6 @@
             </div>
         </div>
         </footer>
-
-        <script>
-            function desativarSetas() {
-                let iframe = document.querySelector('iframe');
-                iframe.contentWindow.addEventListener('keydown', function(event) {
-                    if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-                        event.preventDefault();
-                    }
-                });
-            }
-        
-            window.onload = function() {
-                desativarSetas();
-            };
-        </script>
 
     <script>
         function mostrarMenu() {

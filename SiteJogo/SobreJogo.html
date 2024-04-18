@@ -56,27 +56,39 @@
         </nav>
     </header>
 
-    <section class="banner">
-        <div class="flex">
-            <div class="flex-col">
-                <h2>FUT3</h2>
-                <p>"FUT3" é um jogo Top Down, de esporte, baseado no futebol, o jogo consiste em uma partida 1x1 em um campo de futebol, onde quem fizer a maior pontuação em um determinado limite de tempo ganha.</p>
-            </div>
-            <div class="flex-col">
-                <img src="ImagemJogo.jpeg" alt="Imagem do jogo">
-            </div>
+    <section id="Sobre-jogo">
+        <div class="SobreJogo">
+            <h1>Sobre o Jogo</h1>
+            <br>
+                <h3>Objetivo Principal do jogo:</h3>
+                    <p>O principal objetivo do jogo é fazer a maior quantidade de gols para vencer o time adversário sem ser interrompido por eles. </p>
+            <br>
+                <h3>Ficha Técnica</h3>
+                <h3>Quesito/Descrição</h3>
+                    <ul>
+                        <li>Engine: Construct 3</li>
+                        <li>Plataforma: Pc</li>
+                        <li>Mecânica: Top-Down, esp</li>
+                        <li>Dispositivo de entrada: Mouse e teclado</li>
+                    </ul>
+            <br>
+                <h3>Time do jogador 1:</h3>
+                    <p>Time vermelho</p>
+                <br>
+                    <h3>Time do jogador 2:</h3> 
+                    <p>Time azul</p>
+                <br>
+                <h3>Trilha Sonora</h3>
+                    <a href="https://drive.google.com/drive/folders/1Exn8GzeotIKWVgm_9RlMqrbmitE4hfYl?usp=sharing" title="Ir para o drive com os sons" target="_blank">Drive com a trilha sonora</a>
+                <br>
+                <h3>Regras do Jogo</h3>
+            <ul>
+                <li><strong>Regra #1:</strong>O jogador deve pegar a bola e levar até o gol do adversário para fazer um ponto.</li>
+                <li><strong>Regra #2:</strong>Cada gol vale 1 ponto.</li>
+                <li><strong>Regra #3:</strong>O jogo é uma partida de 2 minutos e quem fizer mais gols nesse intervalo de tempo vence a partida.</li>
+            </ul>    
         </div>
-    </section>
-
-    <main>
-        <section id="jogo">
-            <div class="flex-centro">
-                <h1>FUT3</h1>
-                <iframe src="Game/index.html" title="FUT3"></iframe>
-
-            </div>
-        </section>
-    </main>
+    </section>   
 
     <footer class="footer">
         <div class="flex-centro">
@@ -105,21 +117,6 @@
             </div>
         </div>
         </footer>
-
-        <script>
-            function desativarSetas() {
-                let iframe = document.querySelector('iframe');
-                iframe.contentWindow.addEventListener('keydown', function(event) {
-                    if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-                        event.preventDefault();
-                    }
-                });
-            }
-        
-            window.onload = function() {
-                desativarSetas();
-            };
-        </script>
 
     <script>
         function mostrarMenu() {
